@@ -2,9 +2,15 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/about">About</router-link> |
+      <router-link to="/argu/lux">动态路由</router-link> |
+      <router-link :to="{ name:'About' }">命名路由</router-link> |
+      <router-link to="/parent">嵌套路由</router-link> |
+      <router-link to="/named_view">命名视图</router-link> |
     </div>
     <router-view/>
+    <router-view name="email"/>
+    <router-view name="tel"/>
   </div>
 </template>
 
