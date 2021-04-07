@@ -39,6 +39,10 @@ const routes = [
     }
   },
   {
+    path:'/store',
+    component: () => import('../views/Store.vue')
+  },
+  {
     path: '/home_redirect',
     redirect: '/'
   }
