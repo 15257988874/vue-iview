@@ -11,5 +11,8 @@ module.exports = {
       .set('_c', resolve('src/components'))
   },
   // 打包时不生成.map文件
-  productionSourceMap: false
+  productionSourceMap: false,
+  devServer: {
+    // proxy: 'http://localhost:8888'
+  }
 }
