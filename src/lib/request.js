@@ -25,7 +25,7 @@ class HttpRequest {
   }
   interceptors (instance, url) {
     instance.interceptors.request.use(config => {
-      console.log('config:', config)
+      // console.log('config:', config)
       if (!Object.keys(this.queue).length) {
         // Spin.show()
       }
@@ -39,7 +39,7 @@ class HttpRequest {
     instance.interceptors.response.use(response => {
       this.destroy()
       const { data , status } = response
-      console.log(response)
+      // console.log(response)
       return { data, status }
     }, err => {
       this.destroy()

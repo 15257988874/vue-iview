@@ -43,6 +43,10 @@ const routes = [
     component: () => import('../views/Store.vue')
   },
   {
+    path:'/mock',
+    component: () => import('../views/Mock.vue')
+  },
+  {
     path: '/home_redirect',
     redirect: '/'
   }

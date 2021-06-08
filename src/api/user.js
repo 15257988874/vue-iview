@@ -5,3 +5,15 @@ export const Login = (data) => axios.request({
   data,
   method: 'post'
 })
+
+export const getUserInfo = (data) => axios.request({
+  url: 'user/getUserInfo',
+  data,
+  method: 'get'
+})
+export const getUserList = (data) => axios.request({
+  url: 'user/getUserList',
+  data,
+  method: 'get'
+})
+
