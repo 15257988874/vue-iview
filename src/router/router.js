@@ -43,6 +43,10 @@ const routes = [
     component: () => import('../views/Store.vue')
   },
   {
+    path:'/countToDemo',
+    component: () => import('../views/CountToDemo.vue')
+  },
+  {
     path:'/mock',
     component: () => import('../views/Mock.vue')
   },
